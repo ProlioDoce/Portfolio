@@ -1,5 +1,3 @@
-from counters import *
-from mdims import *
 from manim import *
 import style
 
@@ -13,7 +11,7 @@ def cpp_code(code: str):
     code.line_numbers.set_opacity(0.3)
     return code
 
-class Video(ThreeDScene): #ThreeDScene | MovingCameraScene
+class Video(MovingCameraScene): #ThreeDScene | MovingCameraScene
     def wait_until(self, t: float):
         self.wait(max(0, t - self.time))
 
