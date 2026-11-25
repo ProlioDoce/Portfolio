@@ -30,10 +30,10 @@ def load(path: str):
         return img.copy()
 
 #Path widgets
-widgets_dir = Path(r"C:\Users\MEXICAN SLAYER 777\Pictures\DST Widgets")
+widgets_dir = Path(r"C:\Users\User\Pictures\DST Widgets")
 
 #Make fonts
-font_dir = r"C:\Users\MEXICAN SLAYER 777\AppData\Local\Microsoft\Windows\Fonts\belisa_plumilla.ttf"
+font_dir = r"C:\Users\User\AppData\Local\Microsoft\Windows\Fonts\belisa_plumilla.ttf"
 font_small = ImageFont.truetype(font_dir, 44)
 font_big = ImageFont.truetype(font_dir, 80)
 
@@ -126,5 +126,5 @@ def table(title: str, *items: ImageFile):
 #               banner="WidGen for DST: Table\t (Ctrl+D to Exit)\n",
 #               exitmsg="")
 
-table("wawa", item("twigs", 4), item("tusk", 3), item("gears", 2), item("fossils"), item("fossils"), item("fossils"), item("fossils"),
+table("test", item("twigs", 4), item("tusk", 3), item("gears", 2), item("fossils"), item("fossils"), item("fossils"), item("fossils"),
       item("fossils"), item("fossils"), item("fossils"), item("fossils"))
